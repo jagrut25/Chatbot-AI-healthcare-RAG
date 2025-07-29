@@ -8,8 +8,7 @@ from langchain_community.vectorstores import FAISS
 from langchain_core.prompts import PromptTemplate
 from langchain_huggingface import HuggingFaceEndpoint
 from langchain_groq import ChatGroq
-import warnings
-warnings.filterwarnings("ignore", category=UserWarning)
+
 
 
 
