@@ -71,15 +71,7 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-### 3. Install Dependencies
-
-Install all the necessary Python packages using the `requirements.txt` file.
-```bash
-pip install -r requirements.txt
-```
-*(Note: If you don't have a `requirements.txt` file, you can create one by running `pip freeze > requirements.txt` after installing the packages manually: `pip install streamlit langchain-huggingface langchain langchain_community faiss-cpu langchain-groq python-dotenv`)*
-
-### 4. Configure Your Environment
+### 3. Configure Your Environment
 
 You need to provide your Groq API key.
 
@@ -90,7 +82,7 @@ You need to provide your Groq API key.
 GROQ_API_KEY="your-groq-api-key-goes-here"
 ```
 
-### 5. Set Up the Vector Store
+### 4. Set Up the Vector Store
 
 This application requires a local FAISS vector store. Make sure you have your `db_faiss` directory inside a `vectorstore` folder in your project's root. The structure should look like this:
 
@@ -105,7 +97,7 @@ your-project/
 └── README.md
 ```
 
-### 6. Run the App!
+### 5. Run the App!
 
 You're all set! Start the Streamlit application with this command:
 
